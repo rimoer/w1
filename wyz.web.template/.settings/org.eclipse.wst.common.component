@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="wyz.web.template">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="wyz.service.template-1.0.0.war" deploy-path="/WEB-INF/lib" handle="module:/resource/wyz.service.template/wyz.service.template">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/wyz.web.template/target/classes"/>
+        <property name="context-root" value="wyz.web.template"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name=".template" template="/tiles/layout.jsp">
+		<put-attribute name="title" value="testList" />
+		<put-attribute name="header" value="/pages/common/header.jsp" />
+		<put-attribute name="menu" value="/pages/common/menu.jsp" />
+		<put-attribute name="footer" value="/pages/common/footer.jsp" />
+	</definition>
+
+	<definition name="myweb.test.add" extends=".template">
+		<put-attribute name="body" value="/pages/p1/add.jsp" />
+		<put-attribute name="jsfile" value="/pages/p1/js/p1.js"></put-attribute>
+	</definition>
+
+	<definition name="myweb.test.edit" extends=".template">
+		<put-attribute name="body" value="/pages/p1/edit.jsp" />
+		<put-attribute name="jsfile" value="/pages/p1/js/p1.js"></put-attribute>
+	</definition>
+
+	<definition name="myweb.test.list" extends=".template">
+		<put-attribute name="body" value="/pages/p1/list.jsp" />
+		<put-attribute name="jsfile" value="/pages/p1/js/p1.js"></put-attribute>
+	</definition>
+</tiles-definitions>
