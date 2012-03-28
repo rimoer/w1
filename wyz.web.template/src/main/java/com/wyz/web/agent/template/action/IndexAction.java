@@ -1,4 +1,4 @@
-package com.wyz.web.template.action;
+package com.wyz.web.agent.template.action;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
