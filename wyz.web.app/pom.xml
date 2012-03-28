@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>wyz.web</groupId>
-  <artifactId>wyz.web.app</artifactId>
+  <artifactId>wyz.web.biz</artifactId>
   <version>1.0.0</version>
-  <name>wyz.web.app</name>
+  <name>wyz.web.biz</name>
 </project>
