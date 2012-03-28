@@ -4,4 +4,16 @@
   <artifactId>wyz.web.biz</artifactId>
   <version>1.0.0</version>
   <name>wyz.web.biz</name>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.caucho</groupId>
+  		<artifactId>hessian</artifactId>
+  		<version>4.0.7</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>wyz.web</groupId>
+  		<artifactId>wyz.web</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
+  </dependencies>
 </project>

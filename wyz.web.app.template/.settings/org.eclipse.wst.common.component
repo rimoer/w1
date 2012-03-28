@@ -5,6 +5,24 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="wyz.service.template-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wyz.service.template/wyz.service.template">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wyz.dao.template-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wyz.dao.template/wyz.dao.template">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wyz.mapper.template-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wyz.mapper.template/wyz.mapper.template">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wyz.entity.template-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wyz.entity.template/wyz.entity.template">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wyz.web.biz-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wyz.web.biz/wyz.web.biz">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wyz.web-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wyz.web/wyz.web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/wyz.web.biz.template/target/classes"/>
         <property name="context-root" value="wyz.web.biz.template"/>
     </wb-module>

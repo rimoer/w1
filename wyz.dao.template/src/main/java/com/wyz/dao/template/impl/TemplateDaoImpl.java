@@ -2,6 +2,8 @@ package com.wyz.dao.template.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.wyz.dao.template.TemplateDao;
 import com.wyz.entity.Template;
 import com.wyz.entity.TemplateExample;
@@ -13,6 +15,7 @@ import com.wyz.mapper.TemplateMapper;
  * @version 1.0
  */
 
+@Repository
 public class TemplateDaoImpl implements TemplateDao {
 	TemplateMapper templateMapper = null;
 

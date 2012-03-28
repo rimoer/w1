@@ -3,6 +3,7 @@ package com.wyz.service;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.stereotype.Service;
 
 /**
  * @author wangyz
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.BeanFactoryAware;
  * @version 1.0
  */
 
+@Service
 public class ServiceLoactor implements BeanFactoryAware {
 	private static BeanFactory beanFactory = null;
 

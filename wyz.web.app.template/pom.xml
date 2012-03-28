@@ -41,5 +41,20 @@
   		<artifactId>hessian</artifactId>
   		<version>4.0.7</version>
   	</dependency>
+  	<dependency>
+  		<groupId>wyz.service</groupId>
+  		<artifactId>wyz.service.template</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>wyz.web</groupId>
+  		<artifactId>wyz.web.biz</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-log4j13</artifactId>
+  		<version>1.0.1</version>
+  	</dependency>
   </dependencies>
 </project>

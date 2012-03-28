@@ -1,5 +1,7 @@
 package com.wyz.service.template.impl;
 
+import org.springframework.stereotype.Service;
+
 import com.wyz.dao.template.TemplateDao;
 import com.wyz.service.template.TemplateService;
 
@@ -9,6 +11,7 @@ import com.wyz.service.template.TemplateService;
  * @version 1.0
  */
 
+@Service
 public class TemplateServiceImpl implements TemplateService {
 	TemplateDao templateDao = null;
 
