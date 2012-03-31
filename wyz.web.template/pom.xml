@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>wyz.web.agent</groupId>
-	<artifactId>wyz.web.agent.template</artifactId>
+	<groupId>wyz.web</groupId>
+	<artifactId>wyz.web.template</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
-	<name>wyz.web.agent.template</name>
+	<name>wyz.web.template</name>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.struts</groupId>

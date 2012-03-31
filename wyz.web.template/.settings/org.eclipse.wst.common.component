@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="wyz.web.agent.template">
+    <wb-module deploy-name="wyz.web.template">
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <property name="java-output-path" value="/wyz.web.agent.template/target/classes"/>
-        <property name="context-root" value="wyz.web.agent.template"/>
+        <property name="java-output-path" value="/wyz.web.template/target/classes"/>
+        <property name="context-root" value="wyz.web.template"/>
     </wb-module>
 </project-modules>
