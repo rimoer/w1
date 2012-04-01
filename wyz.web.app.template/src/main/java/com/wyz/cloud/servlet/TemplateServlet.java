@@ -1,10 +1,10 @@
-package com.wyz.web.biz.servlet;
+package com.wyz.cloud.servlet;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.wyz.cloud.AbstractOperator;
 import com.wyz.service.template.TemplateService;
-import com.wyz.web.biz.BizOperator;
 
 /**
  * @author wangyz
@@ -12,7 +12,7 @@ import com.wyz.web.biz.BizOperator;
  * @version 1.0
  */
 
-public class TemplateServlet extends BizOperator {
+public class TemplateServlet extends AbstractOperator {
 	private static final long serialVersionUID = -3509693766765853957L;
 	private final static Logger log = LoggerFactory.getLogger(TemplateServlet.class);
 

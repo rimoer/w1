@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>wyz.web.biz</groupId>
-  <artifactId>wyz.web.biz.template</artifactId>
+  <groupId>wyz.cloud</groupId>
+  <artifactId>wyz.cloud.template</artifactId>
   <version>1.0.0</version>
   <packaging>war</packaging>
-  <name>wyz.web.biz.template</name>
+  <name>wyz.cloud.template</name>
   <dependencies>
   	<dependency>
   		<groupId>org.springframework</groupId>
@@ -47,14 +47,14 @@
   		<version>1.0.0</version>
   	</dependency>
   	<dependency>
-  		<groupId>wyz.web</groupId>
-  		<artifactId>wyz.web.biz</artifactId>
-  		<version>1.0.0</version>
-  	</dependency>
-  	<dependency>
   		<groupId>org.slf4j</groupId>
   		<artifactId>slf4j-log4j13</artifactId>
   		<version>1.0.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>wyz.cloud</groupId>
+  		<artifactId>wyz.cloud</artifactId>
+  		<version>1.0.0</version>
   	</dependency>
   </dependencies>
 </project>

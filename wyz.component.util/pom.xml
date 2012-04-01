@@ -5,4 +5,11 @@
 	<artifactId>wyz.component.util</artifactId>
 	<version>1.0.0</version>
 	<name>util</name>
+	<dependencies>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.8</version>
+		</dependency>
+	</dependencies>
 </project>
