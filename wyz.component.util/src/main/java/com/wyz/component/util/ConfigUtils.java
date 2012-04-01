@@ -31,6 +31,7 @@ public class ConfigUtils {
 	}
 
 	public static void loadConfig(String path) throws ConfigurationException {
+		System.out.println("尝试载入系統配置文件="+path);
 		File file = new File(path);
 		if (file.exists() && file.isFile()) {
 			if (file.getPath().endsWith(".xml")) {
@@ -38,13 +39,20 @@ public class ConfigUtils {
 			} else {
 				config.append(new PropertiesConfiguration(file));
 			}
+			System.out.println("系統配置文件加载成功！");
+		}else{
+			System.out.println("系統配置文件不存在，请检查路径！");
 		}
 	}
 
 	public static void loadLog4j(String path) {
+		System.out.println("尝试载入日志配置文件="+path);
 		File file = new File(path);
 		if (file.exists() && file.isFile()) {
 			PropertyConfigurator.configureAndWatch(path, 60 * 60 * 1000);
+			System.out.println("日志配置文件加载成功！");
+		}else{
+			System.out.println("日志配置文件不存在，请检查路径！");
 		}
 	}
 

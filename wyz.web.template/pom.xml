@@ -18,15 +18,19 @@
 			<version>2.2.1.1</version>
 		</dependency>
 		<dependency>
-			<groupId>wyz.service</groupId>
-			<artifactId>wyz.service.template</artifactId>
-			<version>1.0.0</version>
-			<type>war</type>
-		</dependency>
-		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j13</artifactId>
 			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>3.0-alpha-1</version>
 		</dependency>
 	</dependencies>
 	<build>
