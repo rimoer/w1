@@ -18,9 +18,9 @@ public class TemplateServlet extends AbstractOperator {
 
 	TemplateService templateService = null;
 
-	public Object process(Object obj) {
-		return null;
+	@Override
+	public Object processInvoke(Object obj) {
+		return super.processInvoke(obj);
 	}
 
-	
 }
