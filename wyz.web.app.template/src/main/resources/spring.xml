@@ -19,7 +19,7 @@
        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
 
 	<context:annotation-config />
-	<context:component-scan base-package="com.wyz.web.biz" />
+	<context:component-scan base-package="com.wyz" />
 	<tx:annotation-driven transaction-manager="TransactionManager" />
 
 	<bean id="PropertyPlaceholderConfigurer"
