@@ -2,6 +2,7 @@ package com.wyz.dao.template.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.wyz.dao.template.TemplateDao;
@@ -17,6 +18,7 @@ import com.wyz.mapper.TemplateMapper;
 
 @Repository
 public class TemplateDaoImpl implements TemplateDao {
+	@Autowired
 	TemplateMapper templateMapper = null;
 
 	public int countByExample(TemplateExample example) {
@@ -49,14 +51,6 @@ public class TemplateDaoImpl implements TemplateDao {
 
 	public List<Template> selectByExample(TemplateExample example) {
 		return templateMapper.selectByExample(example);
-	}
-
-	public TemplateMapper getTemplateMapper() {
-		return templateMapper;
-	}
-
-	public void setTemplateMapper(TemplateMapper templateMapper) {
-		this.templateMapper = templateMapper;
 	}
 
 }
