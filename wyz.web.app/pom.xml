@@ -7,14 +7,24 @@
 	<name>wyz.cloud</name>
 	<dependencies>
 		<dependency>
-			<groupId>hessian</groupId>
-			<artifactId>hessian</artifactId>
-			<version>3.0.1</version>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>2.2.1.1</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>3.0-alpha-1</version>
+			<version>2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j13</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.13</version>
 		</dependency>
 	</dependencies>
 </project>

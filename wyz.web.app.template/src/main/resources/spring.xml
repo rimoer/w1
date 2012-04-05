@@ -19,8 +19,12 @@
        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
 
 	<context:annotation-config />
-	<context:component-scan base-package="com.wyz" />
-	<tx:annotation-driven transaction-manager="TransactionManager" />
+	<context:component-scan base-package="com.wyz.mapper" />
+	<context:component-scan base-package="com.wyz.dao.template.impl" />
+	<context:component-scan base-package="com.wyz.service.template.impl" />
+
+
+	<!-- <jee:jndi-lookup id="" jndi-name="" /> -->
 
 	<bean id="PropertyPlaceholderConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -42,17 +46,19 @@
 		<property name="defaultAutoCommit" value="true"></property>
 	</bean>
 
-	<bean id="SqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="DataSource" />
-	</bean>
-
 	<bean id="TransactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="DataSource" />
 	</bean>
 
-	<bean id="MapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	<tx:annotation-driven transaction-manager="TransactionManager" />
+
+	<bean id="SqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.wyz.mapper" />
-		<property name="sqlSessionFactory" ref="SqlSessionFactoryBean"></property>
+		<property name="sqlSessionFactoryBeanName" ref="SqlSessionFactoryBean"></property>
 	</bean>
 </beans>                                                                                                                  
