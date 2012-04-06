@@ -1,0 +1,48 @@
+package com.wyz.cloud.common;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.interceptor.ServletRequestAware;
+import org.apache.struts2.interceptor.ServletResponseAware;
+import org.apache.struts2.util.ServletContextAware;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+
+public class BaseAction extends ActionSupport implements ServletRequestAware,
+		ServletResponseAware, ServletContextAware, ModelDriven<Object> {
+	private static final long serialVersionUID = -655593761741434827L;
+
+	private final static Logger log = LoggerFactory.getLogger(BaseAction.class);
+
+	protected ServletRequest request = null;
+	protected ServletResponse response = null;
+	protected ServletContext context = null;
+
+	@Override
+	public Object getModel() {
+		return null;
+	}
+
+	@Override
+	public void setServletContext(ServletContext context) {
+		this.context = context;
+	}
+
+	@Override
+	public void setServletResponse(HttpServletResponse response) {
+		this.response = response;
+	}
+
+	@Override
+	public void setServletRequest(HttpServletRequest request) {
+		this.request = request;
+	}
+
+}

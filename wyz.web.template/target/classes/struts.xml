@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.i18n.reload" value="true" />
+	<constant name="struts.action.extension" value="req" />
+	<constant name="struts.convention.result.path" value="/" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<constant name="struts.multipart.saveDir" value="/tmp" />
+	<constant name="struts.multipart.maxSize" value="50242880" />
+	<constant name="struts.custom.i18n.resources" value="globalMessages" />
+	<constant name="struts.objectFactory"
+		value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+
+
+	<package name="default" extends="struts-default">
+		<action name="index" class="IndexAction">
+			<result>pages/index.jsp</result>
+		</action>
+	</package>
+
+	<include file="struts-tiles.xml" />
+</struts>
