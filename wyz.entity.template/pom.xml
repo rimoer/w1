@@ -4,4 +4,11 @@
   <artifactId>wyz.entity.template</artifactId>
   <version>1.0.0</version>
   <name>entity</name>
+  <dependencies>
+  	<dependency>
+  		<groupId>wyz.entity</groupId>
+  		<artifactId>wyz.entity</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
+  </dependencies>
 </project>

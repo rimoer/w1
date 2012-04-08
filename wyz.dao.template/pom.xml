@@ -25,5 +25,10 @@
   		<artifactId>spring-tx</artifactId>
   		<version>3.1.1.RELEASE</version>
   	</dependency>
+  	<dependency>
+  		<groupId>wyz.dao</groupId>
+  		<artifactId>wyz.dao</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
   </dependencies>
 </project>
