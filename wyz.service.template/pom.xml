@@ -2,28 +2,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>wyz.service</groupId>
   <artifactId>wyz.service.template</artifactId>
-  <version>1.0.0</version>
-  <name>wyz-service-template</name>
-  <dependencies>
-  	<dependency>
-  		<groupId>wyz.dao</groupId>
-  		<artifactId>wyz.dao.template</artifactId>
-  		<version>1.0.0</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.springframework</groupId>
-  		<artifactId>spring-tx</artifactId>
-  		<version>3.1.1.RELEASE</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.mybatis</groupId>
-  		<artifactId>mybatis</artifactId>
-  		<version>3.1.0</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.mybatis</groupId>
-  		<artifactId>mybatis-spring</artifactId>
-  		<version>1.1.0</version>
-  	</dependency>
-  </dependencies>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>wyz.service.template</name>
 </project>
