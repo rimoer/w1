@@ -20,5 +20,4 @@ public class TemplateServlet extends ActionSupport {
 	@Autowired
 	TemplateService templateService = null;
 
-
 }
