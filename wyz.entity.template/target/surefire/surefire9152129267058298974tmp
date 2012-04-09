@@ -1,0 +1,28 @@
+#surefire
+#Mon Apr 09 22:03:27 CST 2012
+testClassesDirectory=E\:\\repository\\git\\w1\\wyz.entity.template\\target\\test-classes
+classPathUrl.3=C\:\\Users\\Administrator\\.m2\\repository\\wyz\\wyz\\1.0.0\\wyz-1.0.0.jar
+classPathUrl.2=C\:\\Users\\Administrator\\.m2\\repository\\wyz\\entity\\wyz.entity\\1.0.0\\wyz.entity-1.0.0.jar
+useManifestOnlyJar=true
+classPathUrl.1=E\:\\repository\\git\\w1\\wyz.entity.template\\target\\classes
+reportsDirectory=E\:\\repository\\git\\w1\\wyz.entity.template\\target\\surefire-reports
+classPathUrl.0=E\:\\repository\\git\\w1\\wyz.entity.template\\target\\test-classes
+dirscanner.0=directoryScannerOptions
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=E\:\\repository\\git\\w1\\wyz.entity.template\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\Administrator\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.7.1\\surefire-api-2.7.1.jar
+surefireClassPathUrl.0=C\:\\Users\\Administrator\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit3\\2.7.1\\surefire-junit3-2.7.1.jar
+report.2=org.apache.maven.surefire.report.XMLReporter
+useSystemClassLoader=true
+report.1=org.apache.maven.surefire.report.BriefFileReporter
+report.0=org.apache.maven.surefire.report.ForkingConsoleReporter
+excludes0=**/*$*
+isTrimStackTrace=true
+dirscanner.0.params=E\:\\repository\\git\\w1\\wyz.entity.template\\target\\test-classes|[**/Test*.java, **/*Test.java, **/*TestCase.java]|[**/*$*]
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+includes0=**/Test*.java
+childDelegation=false

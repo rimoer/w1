@@ -2,7 +2,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>wyz.service</groupId>
   <artifactId>wyz.service.template</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>wyz.service.template</name>
   <dependencies>
   	<dependency>
@@ -26,4 +25,5 @@
   		<version>1.0.0</version>
   	</dependency>
   </dependencies>
+  <version>1.0.0</version>
 </project>

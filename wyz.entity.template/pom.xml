@@ -10,5 +10,10 @@
   		<artifactId>wyz.entity</artifactId>
   		<version>1.0.0</version>
   	</dependency>
+  	<dependency>
+  		<groupId>wyz</groupId>
+  		<artifactId>wyz</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
   </dependencies>
 </project>
