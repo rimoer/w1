@@ -25,22 +25,18 @@ public class BaseAction extends ActionSupport implements ServletRequestAware,
 	protected ServletResponse response = null;
 	protected ServletContext context = null;
 
-	@Override
 	public Object getModel() {
 		return null;
 	}
 
-	@Override
 	public void setServletContext(ServletContext context) {
 		this.context = context;
 	}
 
-	@Override
 	public void setServletResponse(HttpServletResponse response) {
 		this.response = response;
 	}
 
-	@Override
 	public void setServletRequest(HttpServletRequest request) {
 		this.request = request;
 	}
