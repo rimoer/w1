@@ -59,6 +59,6 @@
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.wyz.mapper" />
-		<property name="sqlSessionFactoryBeanName" ref="SqlSessionFactoryBean"></property>
+		<property name="sqlSessionFactoryBeanName" value="SqlSessionFactoryBean"></property>
 	</bean>
 </beans>                                                                                                                  

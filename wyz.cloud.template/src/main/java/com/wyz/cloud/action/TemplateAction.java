@@ -1,10 +1,11 @@
 package com.wyz.cloud.action;
 
+import org.apache.struts2.convention.annotation.ParentPackage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.opensymphony.xwork2.ActionSupport;
+import com.wyz.cloud.common.FacedeAction;
 import com.wyz.service.template.TemplateService;
 
 /**
@@ -13,9 +14,11 @@ import com.wyz.service.template.TemplateService;
  * @version 1.0
  */
 
-public class TemplateServlet extends ActionSupport {
+@ParentPackage("template-default")
+public class TemplateAction extends FacedeAction {
 	private static final long serialVersionUID = -3509693766765853957L;
-	private final static Logger log = LoggerFactory.getLogger(TemplateServlet.class);
+
+	private final static Logger log = LoggerFactory.getLogger(TemplateAction.class);
 
 	@Autowired
 	TemplateService templateService = null;
