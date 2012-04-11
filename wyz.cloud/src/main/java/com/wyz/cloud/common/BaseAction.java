@@ -9,17 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.ServletResponseAware;
 import org.apache.struts2.util.ServletContextAware;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
-public class BaseAction extends ActionSupport implements ServletRequestAware,
-		ServletResponseAware, ServletContextAware, ModelDriven<Object> {
+public class BaseAction extends ActionSupport implements ServletRequestAware, ServletResponseAware, ServletContextAware, ModelDriven<Object> {
 	private static final long serialVersionUID = -655593761741434827L;
-
-	private final static Logger log = LoggerFactory.getLogger(BaseAction.class);
 
 	protected ServletRequest request = null;
 	protected ServletResponse response = null;
