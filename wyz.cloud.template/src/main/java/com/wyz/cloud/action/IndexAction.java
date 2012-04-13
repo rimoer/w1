@@ -11,7 +11,6 @@ public class IndexAction extends FacedeAction {
 	private static final long serialVersionUID = -35048722565704733L;
 	private final static Logger log = LoggerFactory.getLogger(IndexAction.class);
 
-	@Override
 	public String execute() throws Exception {
 		return super.execute();
 	}

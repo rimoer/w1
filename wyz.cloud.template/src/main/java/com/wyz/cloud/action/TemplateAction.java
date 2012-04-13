@@ -3,7 +3,6 @@ package com.wyz.cloud.action;
 import org.apache.struts2.convention.annotation.ParentPackage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.wyz.cloud.common.FacedeAction;
 import com.wyz.service.template.TemplateService;
@@ -20,7 +19,6 @@ public class TemplateAction extends FacedeAction {
 
 	private final static Logger log = LoggerFactory.getLogger(TemplateAction.class);
 
-	@Autowired
 	TemplateService templateService = null;
 
 }
