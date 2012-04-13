@@ -1,4 +1,4 @@
-package com.wyz.cloud.action;
+package com.wyz.cloud.template.action;
 
 import org.apache.struts2.convention.annotation.ParentPackage;
 import org.slf4j.Logger;

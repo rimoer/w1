@@ -1,4 +1,4 @@
-package com.wyz.cloud.action;
+package com.wyz.cloud.template.action;
 
 /**
  * @author Administrator
