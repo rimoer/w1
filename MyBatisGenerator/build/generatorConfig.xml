@@ -16,13 +16,13 @@
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
 
-		<javaModelGenerator targetPackage="com.wyz.entity" targetProject="../src">
+		<javaModelGenerator targetPackage="com.wyz.entity.estore" targetProject="../src">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 
 		<javaClientGenerator type="ANNOTATEDMAPPER"
-			targetPackage="com.wyz.mapper" targetProject="../src">
+			targetPackage="com.wyz.mapper.estore" targetProject="../src">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 

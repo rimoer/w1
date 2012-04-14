@@ -19,9 +19,9 @@
        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
 
 	<context:annotation-config />
-	<context:component-scan base-package="com.wyz.mapper" />
-	<context:component-scan base-package="com.wyz.dao.template.impl" />
-	<context:component-scan base-package="com.wyz.service.template.impl" />
+	<context:component-scan base-package="com.wyz.mapper.estore" />
+	<context:component-scan base-package="com.wyz.dao.estore.impl" />
+	<context:component-scan base-package="com.wyz.service.estore.impl" />
 
 <!--
 	 <jee:jndi-lookup id="" jndi-name="MysqlDS" /> 
@@ -59,7 +59,7 @@
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.wyz.mapper" />
+		<property name="basePackage" value="com.wyz.mapper.estore" />
 		<property name="sqlSessionFactoryBeanName" value="SqlSessionFactoryBean"></property>
 	</bean>
 </beans>                                                                                                                  
