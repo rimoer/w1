@@ -1,6 +1,6 @@
 <%@ include file="../../inc/import.jsp"%>
 <%@ include file="../../inc/public.jsp"%>
-<div style="background-color: green">
+<div id="div_menu" style="background-color: green">
 	<table>
 		<tr>
 			<td><a href="test-add.req">TestAdd</a></td>

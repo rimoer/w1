@@ -16,4 +16,6 @@ public abstract class ActionResult {
 
 	public final static String LIST = "list";
 
+	public static final String MAIN = "main";
+
 }
