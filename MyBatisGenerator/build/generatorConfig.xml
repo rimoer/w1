@@ -8,7 +8,7 @@
 
 	<context id="MySqlTables" targetRuntime="MyBatis3">
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://localhost/template" userId="root"
+			connectionURL="jdbc:mysql://localhost/estore" userId="root"
 			password="123456">
 		</jdbcConnection>
 
@@ -16,8 +16,7 @@
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
 
-		<javaModelGenerator targetPackage="com.wyz.entity"
-			targetProject="../src">
+		<javaModelGenerator targetPackage="com.wyz.entity" targetProject="../src">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
@@ -27,8 +26,7 @@
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 
-		<table schema="template" tableName="t_template"
-			domainObjectName="Template" enableInsert="true">
+		<table schema="estore" tableName="t_template" domainObjectName="Template" enableInsert="true">
 			<property name="useActualColumnNames" value="true" />
 			<generatedKey column="ID" identity="true" sqlStatement="MYSQL" />
 			<columnOverride column="C1" jdbcType="VARCHAR" />
@@ -36,6 +34,22 @@
 			<columnOverride column="C3" jdbcType="VARCHAR" />
 			<columnOverride column="C4" jdbcType="VARCHAR" />
 			<columnOverride column="C5" jdbcType="VARCHAR" />
+		</table>
+
+		<table schema="estore" tableName="t_goods" domainObjectName="Goods" enableInsert="true">
+			<property name="useActualColumnNames" value="true" />
+			<generatedKey column="ID" identity="true" sqlStatement="MYSQL" />
+			<columnOverride column="id_class" jdbcType="INTEGER" />
+			<columnOverride column="goods_name" jdbcType="VARCHAR" />
+			<columnOverride column="describe" jdbcType="VARCHAR" />
+		</table>
+
+		<table schema="estore" tableName="t_goods_class" domainObjectName="GoodsClass" enableInsert="true">
+			<property name="useActualColumnNames" value="true" />
+			<generatedKey column="ID" identity="true" sqlStatement="MYSQL" />
+			<columnOverride column="id_parent" jdbcType="INTEGER" />
+			<columnOverride column="class_name" jdbcType="VARCHAR" />
+			<columnOverride column="describe" jdbcType="VARCHAR" />
 		</table>
 
 	</context>
