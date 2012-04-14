@@ -6,17 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title><tiles:insertAttribute name="title" /></title>
 <link rel="stylesheet" href="css/demos.css">
-<link rel="stylesheet" href="css/layout-default-latest.css">
 <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.18.custom.css">
 
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
-<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+<script type="text/javascript" src="js/jquery.layout.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
 	$('body').layout({ applyDefaultStyles: true });
 });
-$("div_body").append("<input type='text' name='a'/>");
 </script>
 </head>
 <body>
